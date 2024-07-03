@@ -8003,7 +8003,7 @@
 
 .service-detail {
     position: relative;
-    padding: 100px 0px 100px;
+    /* padding: 100px 0px 100px; */
 }
 
 .service-detail_title-button {

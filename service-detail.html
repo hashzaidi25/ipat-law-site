@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Rulify Law Business HTML-5 Template | Service Details</title>
+<title>Services</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
@@ -18,7 +18,13 @@
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+<style>
+	.content-section {
+      display: none;
+	  padding-top: 100px;
+	  padding-bottom: 20px;
+	}
+</style>
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
@@ -72,7 +78,7 @@
 
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li><a href="#">Home</a>
+										<li><a href="index.html">Home</a>
 											
 										</li>
 										<li class="dropdown"><a href="#">About</a>
@@ -85,11 +91,11 @@
 										
 										<li class="dropdown"><a href="#">services</a>
 											<ul>
-												<li><a href="#">Patent Search</a></li>
-												<li><a href="#">Patent Drafting</a></li>
-												<li><a href="#">Landscape Analysis</a></li>
-												<li><a href="#">IP Commercialization</a></li>
-												<li><a href="#">Infringement Analysis</a></li>
+												<li><a href="service-detail.html#patent_search">Patent Search</a></li>
+												<li><a href="service-detail.html#patent_drafting">Patent Drafting</a></li>
+												<li><a href="service-detail.html#patent_landscape">Landscape Analysis</a></li>
+												<li><a href="service-detail.html#ip_commercialization">IP Commercialization</a></li>
+												<li><a href="service-detail.html#infringement_analysis">Infringement Analysis</a></li>
 											</ul>
 										</li>
 
@@ -167,11 +173,11 @@
 									</li> 
 									<li><a href="#">services</a>
 										<ul>
-											<li><a href="#">Patent Search</a></li>
-											<li><a href="#">Patent Drafting</a></li>
-											<li><a href="#">Landscape Analysis</a></li>
-											<li><a href="#">IP Commercialization</a></li>
-											<li><a href="#">Infringement Analysis</a></li>
+											<li><a href="service-detail.html#patent_search">Patent Search</a></li>
+											<li><a href="service-detail.html#patent_drafting">Patent Drafting</a></li>
+											<li><a href="service-detail.html#landscape_analysis">Landscape Analysis</a></li>
+											<li><a href="service-detail.html#ip_commercialization">IP Commercialization</a></li>
+											<li><a href="service-detail.html#infringement_analysis">Infringement Analysis</a></li>
 										</ul>
 									</li>
 									<li><a href="#">Trademark Services</a>
@@ -187,14 +193,6 @@
 							</li>
 							<li>
 								<a href="portfolio.html">blog  <span>06</span></a>
-								<ul>
-									<li><a href="blog.html">Our Blog</a></li>
-									<li><a href="blog-02.html">Blog 02</a></li>
-									<li><a href="blog-classic.html">Blog Classic</a></li>
-									<li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-									<li><a href="blog-detail.html">Blog Detail</a></li>
-									<li><a href="not-found.html">Not Found</a></li>
-								</ul>
 							</li>
 							<li><a href="#"> Contact <span>01</span></a></li>
 						</ul>
@@ -220,7 +218,7 @@
 						<li>
 							<span class="icon fa fa-envelope"></span>
 							<span class="title">Email Us</span>
-							<a href="mailto:contact@ipatsolutions.com">contact@ipatsolutions.com</a>
+							<a href="mailto:contact@ipat-solutions.com">contact@ipat-solutions.com</a>
 							
 						</li>
 					</ul>
@@ -235,18 +233,20 @@
 		<div class="page-title_pattern" style="background-image:url(assets/images/background/page-title_pattern.png)"></div>
 		<div class="page-title_gradient"></div>
         <div class="auto-container">
-			<h2>Service Details</h2>
+			<h2>Services</h2>
 			<ul class="bread-crumb clearfix">
 				<li><a href="index.html"><i class="fa-solid fa-house fa-fw"></i> Home</a></li>
-				<li>Service Details</li>
+				<li>Services</li>
 			</ul>
         </div>
     </section>
     <!-- End Page Title -->
 
 	<!-- Services Detail -->
+	<div id="content-area">
 	<section class="service-detail">
-		<div class="auto-container">
+		
+		<div id="patent_search" class="content-section auto-container">
 			<div class="sec-title">
 				<div class="row clearfix">
 					<!-- Column -->
@@ -279,11 +279,7 @@
 				<div class="column col-lg-6 col-md-12 col-sm-12">
 					<h3 class="service-detail_subheading">We are offering several types of Patent Search Services:</h3>
 				</div>
-				<!-- Column -->
-				<div class="column col-lg-6 col-md-12 col-sm-12">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa  Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis l consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
-					<p>Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod</p>
-				</div>
+
 			</div>
 
 			<!-- Service Detail Blocks Outer -->
@@ -291,7 +287,7 @@
 				<div class="row clearfix">
 
 					<!-- Service Block One -->
-					<div class="service-block_six col-lg-3 col-md-6 col-sm-12">
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
 						<div class="service-block_six-inner">
 							<div class="service-block_six-icon icon-controlxpert_svgrepocom"></div>
 							<h4 class="service-block_six-heading"><a href="service-detail.html">Patentability Search (or Novelty Search):</a></h4>
@@ -301,7 +297,7 @@
 					</div>
 
 					<!-- Service Block One -->
-					<div class="service-block_six col-lg-3 col-md-6 col-sm-12">
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
 						<div class="service-block_six-inner">
 							<div class="service-block_six-icon icon-controlxpert_svgrepocom-4"></div>
 							<h4 class="service-block_six-heading"><a href="service-detail.html">Freedom to Operate (FTO) Search (or Clearance Search):</a></h4>
@@ -311,7 +307,7 @@
 					</div>
 
 					<!-- Service Block One -->
-					<div class="service-block_six col-lg-3 col-md-6 col-sm-12">
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
 						<div class="service-block_six-inner">
 							<div class="service-block_six-icon icon-judge_svgrepocom"></div>
 							<h4 class="service-block_six-heading"><a href="service-detail.html">Invalidity/Validity Search:</a></h4>
@@ -321,7 +317,7 @@
 					</div>
 
 					<!-- Service Block One -->
-					<div class="service-block_six col-lg-3 col-md-6 col-sm-12">
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
 						<div class="service-block_six-inner">
 							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
 							<h4 class="service-block_six-heading"><a href="service-detail.html">State of the Art Search:</a></h4>
@@ -329,23 +325,243 @@
 								To gain a comprehensive understanding of the existing technology landscape in a particular field.</div>
 						</div>
 					</div>
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Assignee Search (or Applicant Search):</a></h4>
+							<div class="service-block_six-text">Searches patents and applications filed by or assigned to a particular assignee.</div>
+						</div>
+					</div>
 
 				</div>
+			</div>
+</section>
+	<section class="service-detail">
+		
+		<div id="patent_drafting" class="content-section auto-container">
+			<div class="sec-title">
+				<div class="row clearfix">
+					<!-- Column -->
+					<div class="column col-lg-6 col-md-12 col-sm-12">
+						<div class="sec-title_title">Patent Drafting</div>
+						<h2 class="sec-title_heading">Understanding Patent Drafting</h2>
+						<div class="service-detail_title-button">
+							<a href="contact.html" class="theme-btn btn-style-one">
+								<span class="btn-wrap">
+									<span class="text-one">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+									<span class="text-two">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<!-- Column -->
+					<div class="column col-lg-6 col-md-12 col-sm-12">
+						<div class="sec-title_text">
+							Patent drafting is a critical step in the patent application process, involving the preparation of a detailed document that describes an invention. This document must meet the legal requirements of the jurisdiction where the patent is being sought. Effective patent drafting requires a deep understanding of both technical and legal aspects to ensure the invention is thoroughly described and claims are strategically crafted to provide maximum protection. By combining technical expertise, legal knowledge, and strategic insight, patent drafters create robust applications that stand up to scrutiny and protect the inventor's rights.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="service-detail_image">
+				<img src="assets/images/resource/service-11.jpg" alt="" />
 			</div>
 
 			<div class="row clearfix">
 				<!-- Column -->
 				<div class="column col-lg-6 col-md-12 col-sm-12">
-					<h3 class="service-detail_subheading">Problem & Solution</h3>
+					<h3 class="service-detail_subheading">We are offering several types of Patent Drafting Services:</h3>
+				</div>
+
+			</div>
+
+			<!-- Service Detail Blocks Outer -->
+			<div class="service-detail_blocks-outer">
+				<div class="row clearfix">
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Drafting Patent Applications Based on Jurisdictional IP Rules</a></h4>
+							<div class="service-block_six-text">We draft patent applications in accordance with the intellectual property (IP) rules of various jurisdictions, including those of the United States and Europe Patent Offices (PTOs). This ensures compliance with local laws and maximizes the likelihood of patent approval.</div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom-4"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Handling Office Action Responses</a></h4>
+							<div class="service-block_six-text">We expertly manage office action responses, tailored to the specific requirements of the filing jurisdiction. This includes addressing any objections or rejections raised by the patent office to secure patent approval. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-judge_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Comprehensive Description and Strategic Claims Crafting	</a></h4>
+							<div class="service-block_six-text">Our patent drafting involves a meticulous combination of technical writing, legal expertise, and strategic considerations. This ensures that the invention is comprehensively described and that the claims are crafted to provide the broadest possible protection, safeguarding the inventor's interests. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Expertise in Patent Drafting</a></h4>
+							<div class="service-block_six-text">Patent drafting is a complex process requiring a blend of technical knowledge, legal expertise, and strategic thinking. To ensure comprehensiveness, our team comprises experts from various domains with several years of experience in drafting patent applications.</div>
+						</div>
+					</div>
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Assignee Search (or Applicant Search):</a></h4>
+							<div class="service-block_six-text">Searches patents and applications filed by or assigned to a particular assignee.</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+</section>
+<!-- Services Detail -->
+<section class="service-detail">
+	<div id="landscape_analysis" class="content-section auto-container">
+		<div class="sec-title">
+			<div class="row clearfix">
+				<!-- Column -->
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					<div class="sec-title_title">Landscape Analysis</div>
+					<h2 class="sec-title_heading">Understanding Landscape Analysis</h2>
+					<div class="service-detail_title-button">
+						<a href="contact.html" class="theme-btn btn-style-one">
+							<span class="btn-wrap">
+								<span class="text-one">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+								<span class="text-two">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+							</span>
+						</a>
+					</div>
 				</div>
 				<!-- Column -->
 				<div class="column col-lg-6 col-md-12 col-sm-12">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa  Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis l consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna</p>
+					<div class="sec-title_text">
+						Patent landscape analysis (or patent mapping) is a strategic tool used to visualize and analyze the intellectual property (IP) landscape of a particular technology or industry. It involves examining patent data to identify trends, opportunities, potential risks, and the competitive landscape. This type of analysis helps organizations make informed decisions regarding research and development (R&D), business strategy, and IP management.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service-detail_image">
+			<img src="assets/images/resource/service-11.jpg" alt="" />
+		</div>
+
+		<div class="row clearfix">
+			<!-- Column -->
+			<div class="column col-lg-6 col-md-12 col-sm-12">
+				<h3 class="service-detail_subheading">Key Components of Patent Landscape Analysis</h3>
+			</div>
+		</div>
+			
+			<!-- Service Detail Blocks Outer -->
+			<div class="service-detail_blocks-outer">
+				<div class="row clearfix">
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Data Collection:</a></h4>
+							<div class="service-block_six-text">Patent Databases: Collect patent data from various paid and databases such as USPTO, EPO, WIPO, and other national patent offices. <br>
+								Search Strategies: Use keyword searches, classification codes, assignee names, inventor names, and citation analysis to gather relevant patents.</div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom-4"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Data Cleaning and Preparation:</a></h4>
+							<div class="service-block_six-text">Remove Duplicates: Ensure that the dataset is free of duplicate entries. <br>
+								Standardize Data: Normalize variations in assignee names, inventor names, and other fields for consistency. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-judge_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Classification and Categorization:</a></h4>
+							<div class="service-block_six-text">Technology Segments: Categorize patents into different technology segments or subdomains based on their content. <br>
+								Assignees: Identify key patent holders and their portfolios. <br>
+								Geographic Distribution: Analyze the geographic distribution of patents to understand regional innovation trends. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Visualization and Mapping:</a></h4>
+							<div class="service-block_six-text">Patent Maps: Create visual maps that represent the relationships between patents, technologies, and assignees. <br>
+								Trend Charts: Use charts and graphs to illustrate trends over time, such as the number of patents filed in a specific technology area.</div>
+						</div>
+					</div>
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Analysis and Interpretation:</a></h4>
+							<div class="service-block_six-text">Trend Analysis: Identify trends in patent filings, such as emerging technologies or declining interest in certain areas. <br>
+								Competitive Analysis: Analyze the patent portfolios of key competitors to understand their R&D focus and strategic direction. <br>
+								Gap Analysis: Identify gaps in the technology landscape that may represent opportunities for innovation or areas with less competition.</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			
+
+			<div class="row clearfix">
+				<!-- Column -->
+				<div class="column col-lg-10 col-md-12 col-sm-12 centered">
+					<h3 class="service-detail_subheading">Why Patent Landscape Analysis is Important?</h3>
+				</div>
+				<!-- Column -->
+				<div class="column col-lg-10 col-md-12 col-sm-12">
+					<h4>R&D Strategy:</h4>
 					<ul class="service-detail_list">
-						<li><i class="fa-solid fa-circle-check fa-fw"></i>Sed tempor magna et risus ornare, a lobortis.</li>
-						<li><i class="fa-solid fa-circle-check fa-fw"></i>Vivamus tempus urna sit amet ante imperdiet.</li>
-						<li><i class="fa-solid fa-circle-check fa-fw"></i>Mauris sit amet eros ac tellus egestas placerat.</li>
-						<li><i class="fa-solid fa-circle-check fa-fw"></i>Aliquam at leo pretium of consecteter.</li>
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Identify Opportunities: Discover emerging technologies and underexplored areas for potential research and development.</li>
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Avoid Redundancy: Avoid investing in technologies that are already heavily patented or nearing saturation.</li>
+					</ul>
+				</div>
+				<div class="column col-lg-10 col-md-12 col-sm-12">
+					<h4>Competitive Intelligence:</h4>
+					<ul class="service-detail_list">
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Monitor Competitors: Track the patenting activities of competitors to understand their strategic focus and innovation directions.</li>
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Benchmarking: Compare your patent portfolio with those of competitors to identify strengths and weaknesses.</li>
+					</ul>
+				</div>
+				<div class="column col-lg-10 col-md-12 col-sm-12">
+					<h4>Market Entry and Expansion:</h4>
+					<ul class="service-detail_list">
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Identify Barriers: Recognize potential patent barriers that could impact market entry or expansion.</li>
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Find Partners: Identify potential partners or acquisition targets with complementary technologies.</li>
+					</ul>
+				</div>
+				<div class="column col-lg-10 col-md-12 col-sm-12">
+					<h4>IP Management:</h4>
+					<ul class="service-detail_list">
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Portfolio Optimization: Optimize your patent portfolio by identifying valuable patents, potential licensing opportunities, and patents that may be candidates for abandonment.</li>
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Risk Mitigation: Assess and mitigate risks related to patent infringement and freedom to operate.</li>
+					</ul>
+				</div>
+				<div class="column col-lg-10 col-md-12 col-sm-12">
+					<h4>Strategic Decision-Making:</h4>
+					<ul class="service-detail_list">
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Investment Decisions: Inform investment decisions by identifying promising technologies and potential market shifts.</li>
+						<li><i class="fa-solid fa-circle-check fa-fw"></i>Innovation Planning: Plan innovation strategies based on a comprehensive understanding of the technology landscape.</li>
 					</ul>
 				</div>
 			</div>
@@ -356,33 +572,235 @@
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-6 col-sm-12">
 						<div class="service-detail_gallery-image">
-							<img src="assets/images/resource/service-12.jpg" alt="" />
+							<img src="https://demo.themeim.com/wp/rulify/wp-content/themes/lawlify/page-templates/assets/images/resource/service-12.jpg" alt="" />
 						</div>
 					</div>
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-6 col-sm-12">
 						<div class="video-box">
-							<img src="assets/images/resource/service-13.jpg" alt="" />
-							<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video overlay-box"><span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span></a>
+							<img src="https://demo.themeim.com/wp/rulify/wp-content/themes/lawlify/page-templates/assets/images/resource/service-13.jpg" alt="" />
+							<!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video overlay-box"><span class="fa-solid fa-play fa-fw"><i class="ripple"></i></span></a> -->
 						</div>
 					</div>
 				</div>
 			</div>
 
+
+
+		</section>	
+<!-- Services Detail -->
+<section class="service-detail">
+	<div id="ip_commercialization" class="content-section auto-container">
+		<div class="sec-title">
 			<div class="row clearfix">
 				<!-- Column -->
 				<div class="column col-lg-6 col-md-12 col-sm-12">
-					<h3 class="service-detail_subheading">The Final Result</h3>
+					<div class="sec-title_title">IP Commercialization</div>
+					<h2 class="sec-title_heading">Understanding IP Commercialization</h2>
+					<div class="service-detail_title-button">
+						<a href="contact.html" class="theme-btn btn-style-one">
+							<span class="btn-wrap">
+								<span class="text-one">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+								<span class="text-two">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+							</span>
+						</a>
+					</div>
 				</div>
 				<!-- Column -->
 				<div class="column col-lg-6 col-md-12 col-sm-12">
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa  Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis l consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
-					<p>Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod</p>
+					<div class="sec-title_text">
+						Intellectual Property (IP) commercialization involves turning intellectual property assets, such as patents, trademarks, copyrights, and trade secrets, into marketable products or services. It is the process of extracting economic value from IP through various strategies and business models. Effective IP commercialization can lead to revenue generation, competitive advantage, and business growth.
+					</div>
 				</div>
 			</div>
+		</div>
+		<div class="service-detail_image">
+			<img src="assets/images/resource/service-11.jpg" alt="" />
+		</div>
+
+		<div class="row clearfix">
+			<!-- Column -->
+			<div class="column col-lg-6 col-md-12 col-sm-12">
+				<h3 class="service-detail_subheading">Commercialization Models</h3>
+			</div>
+		</div>
+
+
+			<!-- Service Detail Blocks Outer -->
+			<div class="service-detail_blocks-outer">
+				<div class="row clearfix">
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Licensing</a></h4>
+							<div class="service-block_six-text">Allowing other companies to use the IP in exchange for royalties or fees. <br> This can be exclusive or non-exclusive.</div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom-4"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Assignment/Sale:</a></h4>
+							<div class="service-block_six-text">Selling the IP rights outright to another entity. <br> This provides an immediate lump-sum payment but forfeits future control and revenue from the IP. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-judge_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Joint Ventures and Strategic Alliances:</a></h4>
+							<div class="service-block_six-text">Forming partnerships with other companies to co-develop and co-market products based on the IP. <br> This can share risks and resources. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Spin-Offs:</a></h4>
+							<div class="service-block_six-text">Creating a new company to develop and commercialize the IP. This is common in academic and research institutions where new startups are formed around innovative technologies.</div>
+						</div>
+					</div>
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Direct Commercialization:</a></h4>
+							<div class="service-block_six-text">Developing, manufacturing, and selling products or services directly to the market. <br> This requires significant investment and infrastructure but retains full control and revenue.</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+</section>
+<!-- Services Detail -->
+<section class="service-detail">
+	<div id="infringement_analysis" class="content-section auto-container">
+		<div class="sec-title">
+			<div class="row clearfix">
+				<!-- Column -->
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					<div class="sec-title_title">Infringement Analysis</div>
+					<h2 class="sec-title_heading">Understanding Infringement Analysis</h2>
+					<div class="service-detail_title-button">
+						<a href="contact.html" class="theme-btn btn-style-one">
+							<span class="btn-wrap">
+								<span class="text-one">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+								<span class="text-two">make Appointment <i class="fa-solid fa-angle-right fa-fw"></i></span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<!-- Column -->
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					<div class="sec-title_text">
+						Infringement analysis, involves determining whether a product, process, or technology infringes on existing patents or other intellectual property (IP) rights. This is a critical step for businesses to avoid legal disputes and ensure that they have the right to commercialize their innovations without infringing on others' IP rights.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="service-detail_image">
+			<img src="assets/images/resource/service-11.jpg" alt="" />
+		</div>
+
+		<div class="row clearfix">
+			<!-- Column -->
+			<div class="column col-lg-6 col-md-12 col-sm-12">
+				<h3 class="service-detail_subheading">Importance of Infringement Analysis</h3>
+			</div>
+		</div>
+
+
+			<!-- Service Detail Blocks Outer -->
+			<div class="service-detail_blocks-outer">
+				<div class="row clearfix">
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Avoid Legal Disputes:</a></h4>
+							<div class="service-block_six-text">Helps businesses avoid costly and time-consuming litigation by ensuring their products or technologies do not infringe on existing patents.</div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-controlxpert_svgrepocom-4"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Strategic Planning:</a></h4>
+							<div class="service-block_six-text">Informs strategic decisions related to product development, marketing, and commercialization. <br>
+								Identifies potential licensing opportunities or partnerships to mitigate infringement risks. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-judge_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Risk Management:</a></h4>
+							<div class="service-block_six-text">Assesses and mitigates legal and financial risks associated with patent infringement. <br>
+								Provides a basis for negotiating licenses or settlements if infringement is identified. </div>
+						</div>
+					</div>
+
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Innovation and R&D:</a></h4>
+							<div class="service-block_six-text">Encourages innovation by identifying gaps in existing patents and exploring alternative design or technological approaches.</div>
+						</div>
+					</div>
+					<!-- Service Block One -->
+					<div class="service-block_six col-lg-4 col-md-6 col-sm-12">
+						<div class="service-block_six-inner">
+							<div class="service-block_six-icon icon-currency-revenue-solid_svgrepocom"></div>
+							<h4 class="service-block_six-heading"><a href="service-detail.html">Market Entry:</a></h4>
+							<div class="service-block_six-text">Ensures that businesses can enter new markets with confidence, knowing they have freedom to operate without infringing on third-party IP rights.</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+</section>
+
+
+<!-- Post Share Options-->
+<div class="post-share-options style-two auto-container">
+	<div class="post-share-inner d-flex justify-content-between align-items-center flex-wrap">
+		<div class="post-tags"><a href="#">Protection</a> <a href="#">Law</a> <a href="#">Legal</a> <a href="#">Content</a></div>
+	</div>
+</div>
+
+<div class="service-detail_posts">
+	<div class="d-flex align-items-center flex-wrap justify-content-between">
+		<div class="new-post">
+			<a href="#" id="previous-link" data-page="ip_commercialization" class="theme-btn btn-style-one" style="margin-left: 50px;">
+				<span class="btn-wrap">
+					<span class="text-one">Previous <i class="fa-solid fa-angle-left fa-backward"></i></span>
+					<span class="text-two">Previous<i class="fa-solid fa-angle-left fa-backward"></i></span></a>
+			<h4 id="previous-title" style="margin-left: 50px;">Protection of Designs</h4>
+		</div>
+		<div class="new-post text-right">
+			<a href="#" id="next-link" data-page="landscape_analysis" class="theme-btn btn-style-one">
+				<span class="btn-wrap">
+					<span class="text-one">Next <i class="fa-solid fa-angle-right fa-fw"></i></span>
+					<span class="text-two">Next<i class="fa-solid fa-angle-right fa-fw"></i></span></a>
+			<h4 id="next-title">Protection of Designs</h4>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
 
 			<!-- Faq -->
-			<div class="service-detail_faq">
+			<div class="service-detail_faq auto-container">
 				<div class="row clearfix">
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-12 col-sm-12">
@@ -448,35 +866,8 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Post Share Options-->
-			<div class="post-share-options style-two">
-				<div class="post-share-inner d-flex justify-content-between align-items-center flex-wrap">
-					<div class="post-tags"><a href="#">Protection</a> <a href="#">Law</a> <a href="#">Legal</a> <a href="#">Content</a></div>
-					<ul class="social-links">
-						<li><a href="#" class="fa-brands fa-facebook-f fa-fw"></a></li>
-						<li><a href="#" class="fa-brands fa-twitter fa-fw"></a></li>
-						<li><a href="#" class="fa-brands fa-google fa-fw"></a></li>
-						<li><a href="#" class="fa-brands fa-dribbble fa-fw"></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="service-detail_posts">
-				<div class="d-flex align-items-center flex-wrap justify-content-between">
-					<div class="new-post">
-						<a href="#"><i class="fa-solid fa-angle-left fa-fw"></i> Previous</a>
-						<h4>Protection of Designs</h4>
-					</div>
-					<div class="new-post text-right">
-						<a href="#">next <i class="fa-solid fa-angle-right fa-fw"></i></a>
-						<h4>Protection of Designs</h4>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
+			
+			
 	<!-- End Service Detail -->
 
 	<!-- Main Footer Two -->
@@ -562,25 +953,7 @@
 								</div>
 
 								<!-- Footer Column -->
-								<div class="footer_column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget gallery-widget">
-										<h4 class="footer-two_title">our Gallery</h4>
-										<div class="images-outer clearfix">
-											<!--Image Box-->
-											<figure class="image-box"><a class="lightbox-image" href="assets/images/gallery/1.jpg"><img src="assets/images/gallery/gallery-1.jpg" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a class="lightbox-image" href="assets/images/gallery/2.jpg"><img src="assets/images/gallery/gallery-2.jpg" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a class="lightbox-image" href="assets/images/gallery/3.jpg"><img src="assets/images/gallery/gallery-3.jpg" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a class="lightbox-image" href="assets/images/gallery/4.jpg"><img src="assets/images/gallery/gallery-4.jpg" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a class="lightbox-image" href="assets/images/gallery/5.jpg"><img src="assets/images/gallery/gallery-5.jpg" alt=""></a></figure>
-											<!--Image Box-->
-											<figure class="image-box"><a class="lightbox-image" href="assets/images/gallery/6.jpg"><img src="assets/images/gallery/gallery-6.jpg" alt=""></a></figure>
-										</div>
-									</div>
-								</div>
+								
 
 							</div>
 						</div>
@@ -596,15 +969,8 @@
 				<div class="d-flex justify-content-between align-items-center flex-wrap">
 
 					<!-- Copyright -->
-					<div class="main-footer_copyright">Copyright &copy; 2024 <a href="#">Rulify</a> All Rights Reserved</div>
+					<div class="main-footer_copyright">Copyright &copy; 2024 <a href="#">IPAT Solutions</a> All Rights Reserved</div>
 
-					<!-- Social Box -->
-					<div class="footer-social_box">
-						<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-						<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-						<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-					</div>
 
 					<ul class="footer-bottom_nav">
 						<li><a href="#">Policy & Privacy</a></li>
@@ -638,6 +1004,98 @@
 		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
 	</svg>
 </div>
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const pages = ['patent_search', 'patent_drafting', 'landscape_analysis', 'ip_commercialization', 'infringement_analysis'];
+		const pageTitles = {
+			'patent_search': 'Patent Search',
+			'patent_drafting': 'Patent Drafting',
+			'landscape_analysis': 'Landscape Analysis',
+			'ip_commercialization': 'IP Commercialization',
+			'infringement_analysis': 'Infringement Analysis'
+		};
+		let currentPageIndex = 0;
+
+		function showPage(pageId) {
+			document.querySelectorAll('.content-section').forEach(section => {
+				section.style.display = 'none';
+			});
+			const page = document.getElementById(pageId);
+			if (page) {
+				page.style.display = 'block';
+				window.scrollTo(0, 0);
+			}
+		}
+
+		function updateNavigation() {
+			const prevLink = document.getElementById("previous-link");
+			const nextLink = document.getElementById("next-link");
+			const prevTitle = document.getElementById("previous-title");
+			const nextTitle = document.getElementById("next-title");
+
+			if (currentPageIndex > 0) {
+				prevLink.style.visibility = 'visible';
+				prevLink.setAttribute('data-page', pages[currentPageIndex - 1]);
+				prevTitle.textContent = pageTitles[pages[currentPageIndex - 1]];
+			} else {
+				prevLink.style.visibility = 'hidden';
+				prevTitle.textContent = '';
+			}
+
+			if (currentPageIndex < pages.length - 1) {
+				nextLink.style.visibility = 'visible';
+				nextLink.setAttribute('data-page', pages[currentPageIndex + 1]);
+				nextTitle.textContent = pageTitles[pages[currentPageIndex + 1]];
+			} else {
+				nextLink.style.visibility = 'hidden';
+				nextTitle.textContent = '';
+			}
+		}
+
+		document.getElementById("previous-link").addEventListener("click", function(event) {
+			event.preventDefault();
+			if (currentPageIndex > 0) {
+				currentPageIndex--;
+				showPage(pages[currentPageIndex]);
+				updateNavigation();
+			}
+		});
+
+		document.getElementById("next-link").addEventListener("click", function(event) {
+			event.preventDefault();
+			if (currentPageIndex < pages.length - 1) {
+				currentPageIndex++;
+				showPage(pages[currentPageIndex]);
+				updateNavigation();
+			}
+		});
+
+		function setCurrentPageIndexFromHash() {
+			const hash = window.location.hash.substring(1);
+			const pageIndex = pages.indexOf(hash);
+			if (pageIndex !== -1) {
+				currentPageIndex = pageIndex;
+				showPage(hash);
+				updateNavigation();
+			} else {
+				showPage(pages[currentPageIndex]);
+				updateNavigation();
+			}
+			window.scrollTo(0, 0);  // Scroll to top after showing the page
+
+		}
+
+		// Check hash on initial load
+		setCurrentPageIndexFromHash();
+
+		// Check hash on hash change
+		window.addEventListener('hashchange', setCurrentPageIndexFromHash);
+	});
+</script>
+
+	
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.js"></script>
 <script src="assets/js/popper.min.js"></script>
