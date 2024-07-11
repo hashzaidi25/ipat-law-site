@@ -23,7 +23,30 @@
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
     <style>
-        @media (min-width: 992px) {
+       
+        .custom-list {
+            list-style-type: none;
+            counter-reset: custom-counter;
+        }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .custom-list li:before {
+            content: "\2022"; /* Unicode for bullet point */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: white; /* You can change the color to suit your design */
+            font-size: 25px; /* Adjust size as needed */
+            line-height: 1;
+        }
+    
+       
+       @media (min-width: 992px) {
                 .header {
                     width: 100%; max-width: 100%; padding: 0; margin: 50px !important;
                 }
@@ -125,8 +148,7 @@
                                                 </ul>
                                             </li>
 
-                                            <li><a href="#">Blog</a>
-                                            </li>
+                                            
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
@@ -177,7 +199,7 @@
                                 <li><a href="index.html">Home</a>
                                     
                                 </li>
-                                <li class="has-megamenu"><a href="blog.html">Pages </a>
+                                <li class="has-megamenu"><a href="#">Pages </a>
                                     <ul class="mega-menu">
                                         <li>
                                             <a class="" href="about.html">About</a>
@@ -203,10 +225,7 @@
                                         
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="blog.html">blog </a>
-                                    
-                                </li>
+                                
                                 <li><a href="contact.html"> Contact</a></li>
                             </ul>
                         </nav>
@@ -223,11 +242,7 @@
                                 <span class="title">Location</span>
                                 <a>Connought Place, <br> New Delhi, India</a>
                             </li>
-                            <li>
-                                <span class="icon fa fa-phone"></span>
-                                <span class="title">Call Us</span>
-                                <a href="tel:+00999000999">+(00) 999 - 000 - 999</a>
-                            </li>
+                            
                             <li>
                                 <span class="icon fa fa-envelope"></span>
                                 <span class="title">Email Us</span>
@@ -391,9 +406,10 @@
                                 <div class="service-block_two-icon icon-Frame"></div>
                             </div>
                             <h4 class="service-block_two-heading"><a href="service-detail.html#patent_search">Patent Search</a></h4>
-                            <div class="service-block_two-text"> <li>
-                                <ol>Identification of prior arts to assess the novelty of the inventions/validity of the patent claims.</ol>
-                                <ol>Prepare strong invalidity/validity arguments in close coordination with attorneys.</ol></li>
+                            <div class="service-block_two-text"> 
+                                <ol class="custom-list">
+                                    <li> Identification of prior arts to assess the novelty of the inventions/validity of the patent claims.</li>
+                                <li>Prepare strong invalidity/validity arguments in close coordination with attorneys.</li></ol>
                                </div>
                         </div>
                         <div class="lower-box">
@@ -415,8 +431,8 @@
                                 <div class="service-block_two-icon icon-controlxpert_svgrepocom-3"></div>
                             </div>
                             <h4 class="service-block_two-heading"><a href="service-detail.html#landscape_analysis">Landscape Analytics</a></h4>
-                            <div class="service-block_two-text"><li> <ol> scientific analysis of a technology domain to derive actionable insights.</ol>
-                            <ol> It involves examining patent data to identify trends, opportunities, potential risks, and the competitive landscape. </ol></li>
+                            <div class="service-block_two-text"><li> <ol class="custom-list"><li> scientific analysis of a technology domain to derive actionable insights.</li>
+                             <li> involves examining patent data to identify trends, opportunities, potential risks, and the competitive landscape.</li>
                             </div>
                         </div>
                         <div class="lower-box">
@@ -438,8 +454,8 @@
                                 <div class="service-block_two-icon icon-controlxpert_svgrepocom-4"></div>
                             </div>
                             <h4 class="service-block_two-heading"><a href="service-detail.html#patent_drafting">Patent Drafting & Illustrations:</a></h4>
-                            <div class="service-block_two-text"><li><ol>We draft patent applications based on the IP rules of jurisdictions such as the US, and Europe PTO’s.</ol>
-                               <ol> Patent drafters create robust applications that stand up to scrutiny and protect the inventor's rights..</ol></div>
+                            <div class="service-block_two-text"><ol class="custom-list"> <li>We draft patent applications based on the IP rules of jurisdictions such as the US, and Europe PTO’s.</li>
+                               <li> Patent drafters create robust applications that stand up to scrutiny and protect the inventor's rights..</li></ol></div>
                         </div>
                         <div class="lower-box">
                             <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -928,129 +944,6 @@
         <!-- End Fluid One -->
 
 
-        <!-- News One -->
-        <section class="news-one">
-            <div class="auto-container">
-                <div class="sec-title">
-                    <div class="d-flex justify-content-between align-items-center flex-wrap">
-                        <div class="left-box">
-                            <div class="sec-title_title">our blog</div>
-                            <h2 class="sec-title_heading">Latest News & Articles <br> From the Blog</h2>
-                        </div>
-                        <div class="team-one_button">
-                            <a href="blog.html" class="theme-btn btn-style-one">
-							<span class="btn-wrap">
-								<span class="text-one">More Blog <i class="fa-solid fa-angle-right fa-fw"></i></span>
-								<span class="text-two">More Blog <i class="fa-solid fa-angle-right fa-fw"></i></span>
-							</span>
-						</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-one_carousel swiper-container">
-                    <div class="swiper-wrapper">
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <!-- News Block -->
-                            <div class="news-block_one">
-                                <div class="news-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="news-block_one-image">
-                                        <div class="news-block_one-date">26 <span>MAR, 2024</span></div>
-                                        <a href="blog-detail.html"><img src="assets/images/resource/news-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="news-block_one-content">
-                                        <ul class="news-block_one-meta d-flex align-items-center flex-wrap">
-                                            <li><span class="icon fa-regular fa-user fa-fw"></span>Mohd Naved</li>
-                                            <li><span class="icon fa-regular fa-comment-dots fa-fw"></span>03 Comments</li>
-                                        </ul>
-                                        <h4 class="news-block_one-heading"><a href="blog-detail.html">Patent Wars: Iconic Legal Battles That Shaped lead Industries value</a></h4>
-                                        <a class="news-block_one-more" href="blog-detail.html">read more<i class="fa-solid fa-angle-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <!-- News Block -->
-                            <div class="news-block_one">
-                                <div class="news-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="news-block_one-image">
-                                        <div class="news-block_one-date">26 <span>MAR, 2024</span></div>
-                                        <a href="blog-detail.html"><img src="assets/images/resource/news-2.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="news-block_one-content">
-                                        <ul class="news-block_one-meta d-flex align-items-center flex-wrap">
-                                            <li><span class="icon fa-regular fa-user fa-fw"></span>Mohd Naved</li>
-                                            <li><span class="icon fa-regular fa-comment-dots fa-fw"></span>03 Comments</li>
-                                        </ul>
-                                        <h4 class="news-block_one-heading"><a href="blog-detail.html">From Concept to Copyright: Intellectual Property Unraveled</a></h4>
-                                        <a class="news-block_one-more" href="blog-detail.html">read more<i class="fa-solid fa-angle-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <!-- News Block -->
-                            <div class="news-block_one">
-                                <div class="news-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="news-block_one-image">
-                                        <div class="news-block_one-date">26 <span>MAR, 2024</span></div>
-                                        <a href="blog-detail.html"><img src="assets/images/resource/news-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="news-block_one-content">
-                                        <ul class="news-block_one-meta d-flex align-items-center flex-wrap">
-                                            <li><span class="icon fa-regular fa-user fa-fw"></span>Mohd Naved</li>
-                                            <li><span class="icon fa-regular fa-comment-dots fa-fw"></span>03 Comments</li>
-                                        </ul>
-                                        <h4 class="news-block_one-heading"><a href="blog-detail.html">Patent Wars: Iconic Legal Battles That Shaped lead Industries value</a></h4>
-                                        <a class="news-block_one-more" href="blog-detail.html">read more<i class="fa-solid fa-angle-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide -->
-                        <div class="swiper-slide">
-                            <!-- News Block -->
-                            <div class="news-block_one">
-                                <div class="news-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="news-block_one-image">
-                                        <div class="news-block_one-date">26 <span>MAR, 2024</span></div>
-                                        <a href="blog-detail.html"><img src="assets/images/resource/news-2.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="news-block_one-content">
-                                        <ul class="news-block_one-meta d-flex align-items-center flex-wrap">
-                                            <li><span class="icon fa-regular fa-user fa-fw"></span>Mohd Naved</li>
-                                            <li><span class="icon fa-regular fa-comment-dots fa-fw"></span>03 Comments</li>
-                                        </ul>
-                                        <h4 class="news-block_one-heading"><a href="blog-detail.html">From Concept to Copyright: Intellectual Property Unraveled</a></h4>
-                                        <a class="news-block_one-more" href="blog-detail.html">read more<i class="fa-solid fa-angle-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- News One Arrows -->
-                    <div class="news-one-arrow">
-                        <!-- If we need navigation buttons -->
-                        <div class="news-one_carousel-prev fa-solid fa-angle-left fa-fw"></div>
-                        <div class="news-one_carousel-next fa-solid fa-angle-right fa-fw"></div>
-                    </div>
-                    <div class="news-one_carousel-pagination"></div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End News One -->
-
-
         <!-- CTA One -->
         <section class="cta-one">
             <div class="auto-container">
@@ -1059,12 +952,12 @@
                     <div class="cta-one_border-two"></div>
                     <div class="cta-one_image" style="background-image:url(assets/images/resource/cta-1.png)"></div>
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
-                        <h2 class="cta-one_heading">Lets Get Stared with Us. <span>Call Us Now!</span></h2>
+                        <h2 class="cta-one_heading">Lets Get Stared with Us. <span>Connect With Us Now!</span></h2>
                         <div class="cta-one_phone">
-                            <div class="cta-one_phone-icon fa-solid fa-headset fa-fw"></div>
+                            <div class="cta-one_phone-icon fa-solid fa-envelope fa-fw"></div>
                             <div>
-                                Toll Free Call.
-                                <strong>+019-489-209</strong>
+                                Email
+                                <strong>info@ipat-solutions.com</strong>
                             </div>
                         </div>
                     </div>
@@ -1101,7 +994,7 @@
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="main-footer_email"><i class="fa-regular fa-envelope fa-fw"></i> <a href="mailto:contact@ipatsolutions.com">info@ipat-solutions.com</a>
+                                            <div class="main-footer_email"><i class="fa-regular fa-envelope fa-fw"></i> <a href="mailto:info@ipat-solutions.com">info@ipat-solutions.com</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1135,11 +1028,10 @@
                                             <ul class="footer-list">
                                                 <li><a href="about.html">About us</a></li>
                                                 
-                                                <li><a href="blog.html">Blogs</a></li>
+                                                
                                                 <li><a href="contact.html">contacts</a></li>
                                                 <li><a href="#">Trademark Services</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="testimonial.html">Testimonial</a></li>
+                                                <li><a href="service-detail.html">Services</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1154,8 +1046,9 @@
                                                     <a href="#">Connought Place, New Delhi, 11001, India</a>
                                                 </li>
                                                 <li>
-                                                    Sub Office
-                                                    <a href="#">9064 Manhaton NU, Seattle, PC 98107, USA</a>
+                                                    Sub Offices
+                                                    <a href="#">Bridgeport, Chicago, USA</a>
+                                                    <a href="#">Sharjah, UAE</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1182,13 +1075,7 @@
                         <!-- Copyright -->
                         <div class="main-footer_copyright">Copyright &copy; 2024 <a href="#">IPAT Solutions</a> All Rights Reserved</div>
 
-                        <!-- Social Box -->
-                        <div class="footer-social_box">
-                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
