@@ -23,7 +23,60 @@
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
     <style>
-       
+        :root {
+            --primary-color: #000000;
+            --accent-color: #D4AF37;  /* Golden color */
+            --text-color: #ffffff;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        /* Header styling */
+        .header-top {
+            background-color: var(--primary-color);
+        }
+
+        .header-upper {
+            background-color: var(--primary-color);
+        }
+
+        /* Language toggle button */
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .language-btn {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .language-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Update link colors */
+        a {
+            color: var(--accent-color);
+        }
+
+        /* Update button colors */
+        .theme-btn {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
         .custom-list {
             list-style-type: none;
             counter-reset: custom-counter;
@@ -95,7 +148,7 @@
                         <div class="d-flex justify-content-between align-items-center flex-wrap">
 
                             <div class="logo-box d-flex align-items-center flex-wrap">
-                                <div class="logo"><a href="index.html"><img src="assets/images/IPAT.png" alt="" title=""></a></div>
+                                <div class="logo"><a href="index.html"><img src="assets/images/ALMAZROA.png" alt="Almazroa Intellectual Property" title=""></a></div>
                                 <!-- Nav Toggle -->
                                 <div id="open_offcanvas" class="d-flex align-items-center">
                                     <!-- <div class="bars-outer"><img src="assets/images/icons/menu.png" alt="" /></div> -->
@@ -184,6 +237,13 @@
             </div>
             <!-- End Mobile Menu -->
 
+            <div class="language-toggle">
+                <button class="language-btn" onclick="toggleLanguage()">
+                    <span class="lang-en">عربي</span>
+                    <span class="lang-ar" style="display: none;">English</span>
+                </button>
+            </div>
+
         </header>
         <!-- End Main Header -->
 
@@ -271,7 +331,11 @@
                                 <div class="slider-one_content col-lg-6 col-md-12 col-sm-12" >
                                     <!-- Your slider content here -->
                                     <div class="slider-one_content-inner" style="padding-top: 50px; ">
-                                        <h1 class="slider-one_heading"><span>Unveiling</span> Patents, Trademarks & Copyrights</h1>
+                                        <h1 class="slider-one_heading" data-lang 
+                                            data-en="<span>Unveiling</span> Patents, Trademarks & Copyrights"
+                                            data-ar="<span>اكتشاف</span> براءات الاختراع والعلامات التجارية وحقوق النشر">
+                                            <span>Unveiling</span> Patents, Trademarks & Copyrights
+                                        </h1>
                                         <div class="slider-one_text">IPAT SOLUTIONS is a leading Intellectual Property (IP) consulting company, providing IP support services to corporates, law firms, universities, research organizations, inventors, and consulting firms.
                                         </div>
                                         <div class="slider-one_button">
@@ -308,7 +372,11 @@
                                 <!-- Content Column -->
                                 <div class="slider-one_content col-lg-6 col-md-12 col-sm-12">
                                     <div class="slider-one_content-inner">
-                                        <h1 class="slider-one_heading"><span>Unveiling</span> Patents, Trademarks & Copyrights</h1>
+                                        <h1 class="slider-one_heading" data-lang 
+                                            data-en="<span>Unveiling</span> Patents, Trademarks & Copyrights"
+                                            data-ar="<span>اكتشاف</span> براءات الاختراع والعلامات التجارية وحقوق النشر">
+                                            <span>Unveiling</span> Patents, Trademarks & Copyrights
+                                        </h1>
                                         <div class="slider-one_text">We draw on deep industry and domain expertise to meet IP needs of clients across multiple industries.</div>
                                         <div class="slider-one_button">
                                             <a href="about.html" class="theme-btn btn-style-one">
@@ -343,7 +411,11 @@
                                 <!-- Content Column -->
                                 <div class="slider-one_content col-lg-6 col-md-12 col-sm-12">
                                     <div class="slider-one_content-inner">
-                                        <h1 class="slider-one_heading"><span>Unveiling</span> Patents, Trademarks & Copyrights</h1>
+                                        <h1 class="slider-one_heading" data-lang 
+                                            data-en="<span>Unveiling</span> Patents, Trademarks & Copyrights"
+                                            data-ar="<span>اكتشاف</span> براءات الاختراع والعلامات التجارية وحقوق النشر">
+                                            <span>Unveiling</span> Patents, Trademarks & Copyrights
+                                        </h1>
                                         <div class="slider-one_text">Our vision is to provide the full spectrum of high-quality patent solutions, across all technology domains to the client.</div>
                                         <div class="slider-one_button">
                                             <a href="about.html" class="theme-btn btn-style-one">
@@ -557,8 +629,7 @@
                             <div class="sec-title title-anim">
                                 <div class="sec-title_title">about us</div>
                                 <h2 class="sec-title_heading">Our Story in Intellectual Property</h2>
-                                <div class="sec-title_text">We are a team of the dedicated patent professionals, united by our commitment to our excellence patent services. With years of collective experience acros diverse industries team of this dedicated patent professionals,
-                                    united by our </div>
+                                <div class="sec-title_text">We are a team of dedicated patent professionals, united by our commitment to excellence in patent services. With years of collective experience across diverse industries, our team is committed to providing top-tier solutions.</div>
                             </div>
                             <ul class="about-one_list">
                                 <li><i class="fa-solid fa-circle-check fa-fw"></i>Expertise in Patent Protection</li>
@@ -595,20 +666,15 @@
                                     <!-- About One Counter Count -->
                                     <div class="about-one_counter-count">
                                         <span class="odometer" data-count="980"></span><i>+</i>
-                                        <h5 class="about-one_counter-heading">Total Completed Case</h5>
-                                        <div class="about-one_counter-text">Team of dedicated patent professionals</div>
-                                    </div>
-                                    <!-- About One Counter Count -->
-                                    <div class="about-one_counter-count">
+                                        <h5 class="about-one_counter-heading">Total Completed Case</h5>                                        <div class="about-one_counter-text">Demonstrating our extensive experience.</div>                                    <div class="about-one_counter-count">
                                         <span class="odometer" data-count="820"></span><i>+</i>
                                         <h5 class="about-one_counter-heading">Happy Customers</h5>
-                                        <div class="about-one_counter-text">Team of dedicated patent professionals</div>
-                                    </div>
-                                    <!-- About One Counter Count -->
+                                        <div class="about-one_counter-text">Reflecting our client-centric approach.</div>
+                                    </div>                                        <div class="about-one_counter-text">Reflecting our client-centric approach.</div>                                    <!-- About One Counter Count -->
                                     <div class="about-one_counter-count">
-                                        <span class="odometer" data-count="99"></span><i>%</i>
-                                        <h5 class="about-one_counter-heading">Case Success Rate</h5>
-                                        <div class="about-one_counter-text">Team of dedicated patent professionals</div>
+
+
+                                        <h5 class="about-one_counter-heading">Case Success Rate</h5>                                        <div class="about-one_counter-text">Highlighting our commitment to achieving results.</div>                                        <div class="about-one_counter-text">Team of dedicated patent professionals</div>
                                     </div>
                                 </div>
                             </div>
@@ -1061,7 +1127,7 @@
 
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/images/IPAT.png" alt="" /></a>
+                            <a href="index.html"><img src="assets/images/ALMAZROA.png" alt="Almazroa Intellectual Property" title=""></a>
                         </div>
 
                         <!-- Copyright -->
@@ -1121,6 +1187,30 @@
     <script src="assets/js/nav-tool.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+        let currentLang = 'en';
+        
+        function toggleLanguage() {
+            const elements = document.querySelectorAll('[data-lang]');
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+            
+            // Toggle button text
+            document.querySelector('.lang-en').style.display = currentLang === 'en' ? 'inline' : 'none';
+            document.querySelector('.lang-ar').style.display = currentLang === 'ar' ? 'inline' : 'none';
+            
+            // Toggle content
+            elements.forEach(element => {
+                const langContent = element.getAttribute(`data-${currentLang}`);
+                if (langContent) {
+                    element.innerHTML = langContent;
+                }
+            });
+            
+            // Update RTL/LTR
+            document.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+        }
+    </script>
 
 </body>
 
